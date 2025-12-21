@@ -166,8 +166,8 @@ function buildBlogList(posts) {
 function main() {
   console.log('Building blog...\n');
 
-  // Get all markdown files
-  const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
+  // Get all markdown files (exclude template)
+  const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('_'));
   console.log(`Found ${files.length} posts\n`);
 
   const posts = [];
