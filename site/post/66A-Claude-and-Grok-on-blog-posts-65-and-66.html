@@ -69,7 +69,22 @@
     /* Header */
     .header {
       background-color: var(--color-8);
-      padding: 20px 0 50px;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .header.scrolled {
+      background-color: var(--color-4);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .header-spacer {
+      height: 80px;
     }
 
     .header-container {
@@ -220,7 +235,7 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header-container">
       <a href="/" class="logo">
         <img src="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/Saufex_09cgctgm.png" alt="SAUFEX">
@@ -231,6 +246,7 @@
       </nav>
     </div>
   </header>
+  <div class="header-spacer"></div>
 
   <main class="main">
     <a href="/blog.html" class="back-link">&larr; Back to all posts</a>
@@ -317,5 +333,16 @@
       Funded by the European Union.
     </div>
   </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
