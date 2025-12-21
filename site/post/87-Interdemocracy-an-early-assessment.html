@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>(87) Interdemocracy – an early assessment</title>
+  <meta name="title" content="(87) Interdemocracy – an early assessment">
+  <meta name="description" content="Interdemocracy's implementation challenges.">
+  <meta property="og:title" content="(87) Interdemocracy – an early assessment">
+  <meta property="og:description" content="Interdemocracy's implementation challenges.">
+  <meta property="og:url" content="https://saufex.eu/post/87-Interdemocracy-an-early-assessment">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="(87) Interdemocracy – an early assessment">
+  <meta name="twitter:description" content="Interdemocracy's implementation challenges.">
+  <link rel="canonical" href="https://saufex.eu/post/87-Interdemocracy-an-early-assessment">
+  <link rel="icon" href="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/vignette_37inqvsf.png">
+  <link rel="preload" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap" as="font">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="707053d9-cf31-4d9b-91f2-2c466abd95bb" data-blockingmode="auto" type="text/javascript"></script>
+  <style>
+    :root {
+      --color-1: #070325;
+      --color-2: #2B024D;
+      --color-3: #735B00;
+      --color-4: #A88500;
+      --color-5: #07336F;
+      --color-6: #1A0C75;
+      --color-7: #463803;
+      --color-8: #06172E;
+      --color-9: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.7;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: #616773;
+      background-color: #ffffff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Baloo Bhai', display;
+      color: var(--color-2);
+      margin-bottom: 0.5em;
+    }
+
+    h1 { font-size: 2.5rem; line-height: 1.3; letter-spacing: -1px; }
+    h2 { font-size: 2rem; line-height: 1.3; margin-top: 1.5em; }
+    h3 { font-size: 1.5rem; line-height: 1.4; margin-top: 1.2em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+    h4 { font-size: 1.25rem; margin-top: 1em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+
+    a {
+      color: var(--color-4);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--color-8);
+      padding: 20px 0 50px;
+    }
+
+    .header-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-nav a {
+      color: var(--color-9);
+      font-size: 14px;
+    }
+
+    /* Main Content */
+    .main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .post-meta {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .post-meta strong {
+      color: #666;
+    }
+
+    .content p {
+      margin-bottom: 1.2em;
+    }
+
+    .content ul, .content ol {
+      margin-bottom: 1.2em;
+      padding-left: 2em;
+    }
+
+    .content li {
+      margin-bottom: 0.5em;
+    }
+
+    .content blockquote {
+      border-left: 4px solid var(--color-4);
+      padding-left: 20px;
+      margin: 1.5em 0;
+      font-style: italic;
+      color: #555;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      margin: 1.5em 0;
+      border-radius: 4px;
+    }
+
+    .content pre {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 1.5em 0;
+    }
+
+    .content code {
+      font-family: monospace;
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .content pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--color-8);
+      color: var(--color-9);
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-section h4 {
+      color: var(--color-9);
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-section a {
+      color: var(--color-9);
+      opacity: 0.8;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-section a:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      max-width: 1140px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--color-4);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.5rem; }
+      .header-container { justify-content: center; text-align: center; }
+      .footer-container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/Saufex_09cgctgm.png" alt="SAUFEX">
+      </a>
+      <nav class="header-nav">
+        <a href="mailto:info@saufex.eu">Contact</a>
+        <a href="https://discord.gg/bvaGd5rahu">Join Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <a href="/blog.html" class="back-link">&larr; Back to all posts</a>
+    <article>
+      <h1>(87) Interdemocracy – an early assessment</h1>
+      <div class="post-meta">
+        By <strong>Onno Hansen-Staszyński</strong> | Published: November 11, 2025 | Last Updated: December 11, 2025
+      </div>
+      <div class="content">
+        <p>By <strong>Onno Hansen-Staszyński</strong> | Last Updated: <strong>11 December 2025</strong>  </p>
+<h2><a href="#Introduction"></a>Introduction</h2>
+<p>Interdemocracy as an intervention seems realistic in theory and necessary in principle. But it is bound to face serious practical implementation hurdles.</p>
+<h2><a href="#Logic"></a>Logic</h2>
+<p>Traditional, centralized solutions are failing. The intervention takes a different path; it seeks to treat the vulnerability (low resilience) rather than just the pathogen (FIMI/GAI).</p>
+<ul>
+<li><p>FIMI: The most effective defense against FIMI is not censorship, but a citizenry structurally secure in their autonomy, belonging, and achievement. If citizens are isolated or disenfranchised, they are more open to confirm divisive narratives.</p>
+</li>
+<li><p>GAI: A strong defense against cognitive debt and weakened individual resilience caused by AI is proactively strengthening human cognitive and psychosocial functions.</p>
+</li>
+<li><p>The underlying logic: If the system can consistently charge the citizen’s &quot;resilience battery,&quot; it makes both external manipulation and internal technological decay less potent. As a result, this approach moves beyond the limitations of reactive interventions or top-down regulation.</p>
+</li>
+</ul>
+<h2><a href="#Autopoiesis-and-adaptability"></a>Autopoiesis and adaptability</h2>
+<p>The theoretical core of the intervention is autopoiesis (self-creation/self-correction) based on an empathetic-utilitarian approach that dictates policy must maximize the core human needs of autonomy, belonging, achievement, and safety..</p>
+<ul>
+<li><p>The proposal views society as a dynamic, self-regulating system that must constantly adjust to threats.</p>
+</li>
+<li><p>Since FIMI and GAI are rapidly evolving threats, no fixed, top-down law can keep pace. Interdemocracy is proposed as a feedback loop that uses the public&#39;s &quot;belief-speaking&quot; - their lived experiences and perspectives - to co-create security policies.</p>
+</li>
+<li><p>A mechanism that inherently adapts seems the most realistic approach for modern, complex, and accelerating threats.</p>
+</li>
+</ul>
+<h2><a href="#Shift-from-expert-control-to-societal-agency"></a>Shift from expert control to societal agency</h2>
+<p>The intervention bypasses the inherent limitations of expert-only policy-making:</p>
+<ul>
+<li><p>It corrects the bias of expert consensus by adding the vital &quot;public perspective&quot;. Experts know what is evidence-informed, but citizens know what is experienced and what is acceptable, and therefore implementable.</p>
+</li>
+<li><p>By making the individual an active participant in resilience planning - not just a passive recipient of government protection - it structurally embeds a sense of belonging, autonomy, and achievement, which are themselves the components of resilience.</p>
+</li>
+</ul>
+<h2><a href="#Implementation-challenges"></a>Implementation challenges</h2>
+<p>The difficulty lies in the execution.</p>
+<p>· Operationalizing &quot;belief-speaking&quot;. How can a national or European policy reliably collect, process, and integrate millions of diverse, often contradictory, citizen beliefs into a coherent security strategy? This process is vulnerable to political capture, bias, and manipulation.</p>
+<p>· Scaling the program. Interdemocracy is a &quot;whole-of-society approach,&quot; meaning it must function effectively across vast populations and diverse demographics. Creating and maintaining this nationwide communication and participation infrastructure is a massive logistical undertaking.</p>
+<p>· Measuring efficacy. How do you definitively prove that a change in policy is due to the intervention rather than other factors? Measuring impact is notoriously difficult, but crucial for the „charging of the resilience batteries”.</p>
+<p>· Enhancing institutional responsiveness. Undemocratic liberal and paternalistic attitudes are always only one step away in institutions that have come to see themselves as a goal in themselves, resulting from a meritocratic and technocratic worldview.</p>
+<p>· Vulnerability to misuse. Any large-scale program that systematically deals with public sentiment, even for benevolent purposes, runs the risk of being co-opted for surveillance or political engineering.</p>
+<h2><a href="#Original-solution"></a>Original solution</h2>
+<p>Rather than just waiting for institutions to become responsive based on an ethical-utalitarian motivation and a fully functioning, effective infrastructure to emerge, individuals should adopt an autopoietic stance themselves. The charging of their resilience batteries should not be solely or even significantly reliant on the occurence of a reaction by institutions or on the quality of that reaction.</p>
+<p>Individuals should see the act of self-expression as an act of autonomy, belonging, and achievement in itself. They should strive for authenticity, that is a congruence of their self-expression with what they know about the external world and about their inner world that was shaped by their experiences. This is both their self-creation and self-correction.</p>
+<h2><a href="#Conclusion"></a>Conclusion</h2>
+<p>Whether the intervention is realistic depends both institutions and individuals. When the first move is expected to be undertaken by institutions, their responsiveness and adaptibility becomes they key factor determining feasiibility of Interdemocracy. But we can move beyond this dependency and accept the act of self-expression as an act of self-realisation and self-resilience building.</p>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>SAUFEX</h4>
+        <p style="opacity: 0.7; font-size: 14px; line-height: 1.6;">
+          Secure Automated Unified Framework for Exchange - combating foreign information manipulation and interference.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/research.html">Research</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <a href="mailto:info@saufex.eu">info@saufex.eu</a>
+        <a href="https://discord.gg/bvaGd5rahu">Discord</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Funded by the European Union.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - SAUFEX</title>
+  <meta name="title" content="Blog - SAUFEX">
+  <meta name="description" content="Insights on combating foreign information manipulation and building societal resilience.">
+  <meta property="og:title" content="Blog - SAUFEX">
+  <meta property="og:description" content="Insights on combating foreign information manipulation and building societal resilience.">
+  <meta property="og:url" content="https://saufex.eu/blog.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://saufex.eu/blog.html">
+  <link rel="icon" href="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/vignette_37inqvsf.png">
+  <link rel="preload" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap" as="font">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="707053d9-cf31-4d9b-91f2-2c466abd95bb" data-blockingmode="auto" type="text/javascript"></script>
+  <style>
+    :root {
+      --color-1: #070325;
+      --color-2: #2B024D;
+      --color-3: #735B00;
+      --color-4: #A88500;
+      --color-5: #07336F;
+      --color-6: #1A0C75;
+      --color-7: #463803;
+      --color-8: #06172E;
+      --color-9: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.7;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: #616773;
+      background-color: #ffffff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Baloo Bhai', display;
+      color: var(--color-2);
+      margin-bottom: 0.5em;
+    }
+
+    h1 { font-size: 2.5rem; line-height: 1.3; letter-spacing: -1px; }
+    h2 { font-size: 1.4rem; line-height: 1.4; font-family: 'Montserrat', sans-serif; font-weight: 600; margin-bottom: 0.3em; }
+
+    a {
+      color: var(--color-4);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--color-8);
+      padding: 20px 0 50px;
+    }
+
+    .header-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-nav a {
+      color: var(--color-9);
+      font-size: 14px;
+    }
+
+    /* Main Content */
+    .main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .page-header {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #eee;
+    }
+
+    .page-header p {
+      color: #888;
+      margin-top: 10px;
+    }
+
+    .post-count {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    /* Post List */
+    .post-list {
+      list-style: none;
+    }
+
+    .post-item {
+      padding: 25px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .post-item:first-child {
+      padding-top: 0;
+    }
+
+    .post-item h2 a {
+      color: var(--color-2);
+    }
+
+    .post-item h2 a:hover {
+      color: var(--color-4);
+    }
+
+    .post-meta {
+      color: #999;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .post-excerpt {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--color-8);
+      color: var(--color-9);
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-section h4 {
+      color: var(--color-9);
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-section a {
+      color: var(--color-9);
+      opacity: 0.8;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-section a:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      max-width: 1140px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .header-container { justify-content: center; text-align: center; }
+      .footer-container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/Saufex_09cgctgm.png" alt="SAUFEX">
+      </a>
+      <nav class="header-nav">
+        <a href="mailto:info@saufex.eu">Contact</a>
+        <a href="https://discord.gg/bvaGd5rahu">Join Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>Blog</h1>
+      <p>Insights on combating foreign information manipulation and building societal resilience.</p>
+    </div>
+
+    <div class="post-count">115 posts</div>
+
+    <ul class="post-list">
+      
+      <li class="post-item">
+        <div class="post-meta">December 19, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/89A-Notes-on-Interdemocracy-as-a-trace">(89A) Notes on Interdemocracy as a trace</a></h2>
+        <p class="post-excerpt">Ma, Chater, Giddens, Goffman, Bauman.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 18, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/89-Interdemocracy-as-a-trace">(89) Interdemocracy as a trace</a></h2>
+        <p class="post-excerpt">Interdemocracy as a perpetual practice.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 16, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/88-Better-than-nothing">(88) Better than nothing</a></h2>
+        <p class="post-excerpt">On adolescents and generative AIs.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 10, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/87A-Reflections-on-blog-post-87">(87A) Reflections on blog post (87)</a></h2>
+        <p class="post-excerpt">Reaffirming the original aspirations of Interdemocracy.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 29, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/79-PS">(79) PS</a></h2>
+        <p class="post-excerpt">An epistemic sabotage AI use case.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 8, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/80-SAUFEX-based-recommendations">(80) SAUFEX-based recommendations</a></h2>
+        <p class="post-excerpt">Half time project recommendations based on preliminary outcomes.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 27, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/81-Belief-speaking-in-joint">(81) Belief-speaking ‘in joint’</a></h2>
+        <p class="post-excerpt">My response to the current times that feel out of joint.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 10, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/82-The-procedural-truth-of-resilience-autopoiesis-and-Interdemocracy">(82) The procedural truth of resilience: autopoiesis and Interdemocracy</a></h2>
+        <p class="post-excerpt">Self-creation, rather than being shock-proof, constitutes necessary resilience.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 10, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/84-The-resilience-battery-autopoiesis-through-procedural-integrity">(84) The resilience battery: autopoiesis through procedural integrity</a></h2>
+        <p class="post-excerpt">A society becomes truly resilient by cultivating individuals whose capacity to generate and apply adaptive insights grows through honest expression.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 26, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/85-AI-and-education">(85) AI and education</a></h2>
+        <p class="post-excerpt">A raw, observational blog post on real students and why we should look at ourselves.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 2, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/86-Unease">(86) Unease</a></h2>
+        <p class="post-excerpt">Adolescents in a sea of information manipulation.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 3, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/86A-Another-day-another-group">(86A) Another day, another group</a></h2>
+        <p class="post-excerpt">Follow-up on blog post 86.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/87-Interdemocracy-an-early-assessment">(87) Interdemocracy – an early assessment</a></h2>
+        <p class="post-excerpt">Interdemocracy's implementation challenges.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 13, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/29-Module-Countering-information-incidents">(29) Module: Countering information incidents</a></h2>
+        <p class="post-excerpt">The first module in the EMoD learning path 'Organized countering of mis and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 28, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/78-The-limits-of-AI-in-content-moderation">(78) The limits of AI in content moderation</a></h2>
+        <p class="post-excerpt">Automated AI moderation does not understand context and is therefore open to overreaching.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 28, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/78A-On-the-consequences-of-blog-post-78">(78A) On the consequences of blog post (78)</a></h2>
+        <p class="post-excerpt">AI users should hold regulators accountable for the enforcement of human oversight over AI.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/76-A-third-ethical-frame-regarding-FIMI">(76) A third ethical frame regarding FIMI</a></h2>
+        <p class="post-excerpt">The theoretical framework guiding my contributions to Saufex.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 21, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/76A-Grok-reacts">(76A) Grok reacts</a></h2>
+        <p class="post-excerpt">Grok explains its pledge to support Interdemocracy.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 22, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/76B-ChatGPT-reacts">(76B) ChatGPT reacts</a></h2>
+        <p class="post-excerpt">ChatGPT interprets Grok's pledge.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 23, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/76C-Epilogue">(76C) Epilogue</a></h2>
+        <p class="post-excerpt">GAIs' adaptive personalization is dangerous.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 23, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/77-Two-AI-literacy-recommendations">(77) Two AI literacy recommendations</a></h2>
+        <p class="post-excerpt">GAIs are not trustworthy and not friends.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 14, 2025 | By Julian</div>
+        <h2><a href="/post/Perhaps-the-Flaws-arent-with-AI-Theyre-With-Us">Perhaps the Flaws aren’t with AI, They’re With Us</a></h2>
+        <p class="post-excerpt">I dive into existing issues that have become apparent with the widespread use of AI</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/75-The-current-AI-imbalance">(75) The current AI imbalance</a></h2>
+        <p class="post-excerpt">AI’s imbalance: mass adoption through user alignment, force-feeding, and circular investments without technological maturity.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 13, 2025 | By Julian</div>
+        <h2><a href="/post/What-are-the-DISARM-Frameworks">What are the DISARM Frameworks?</a></h2>
+        <p class="post-excerpt">Here we overview what the DISARM Frameworks are</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 13, 2025 | By Julian</div>
+        <h2><a href="/post/What-is-the-ABCDE-Framework">What is the ABCDE Framework?</a></h2>
+        <p class="post-excerpt">Here we provide an overview of the ABCDE Framework</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 3, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/69-SAUFEX-phase-one-and-two">(69) SAUFEX phase one and two</a></h2>
+        <p class="post-excerpt">Phase two means involving the general public and taking opinions into account.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 9, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/70-Generative-AI-characteristics-1">(70) Generative AI characteristics (1)</a></h2>
+        <p class="post-excerpt">Text-based generative AI output should be treated as misinformation.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 9, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/71-Generative-AI-characteristics-2">(71) Generative AI characteristics (2)</a></h2>
+        <p class="post-excerpt">GAIs are about pattern reproduction, not reasoning.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 9, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/72-Generative-AI-characteristics-3">(72) Generative AI characteristics (3)</a></h2>
+        <p class="post-excerpt">GAIs are performative only - there is nobody home.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 1, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/73-The-regional-Interdemocracy-pilot">(73) The regional Interdemocracy pilot</a></h2>
+        <p class="post-excerpt">Conference perspectives on Interdemocracy by students, school leaders, teachers, and audience members.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 4, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/74-Toolkit-escalating-responses-to-mis-disinformation-and-FIMI-at-the-demand-side">(74) Toolkit of escalating responses to mis-, disinformation, and FIMI aimed at the demand side</a></h2>
+        <p class="post-excerpt">A summary of best practices.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 21, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/10-Module-Sustaining-beliefs">(10) Module: Sustaining beliefs</a></h2>
+        <p class="post-excerpt">The third module in the EMoD learning path 'Anatomy of mis- and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 30, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/11-Module-Countering-beliefs">(11) Module: Countering beliefs</a></h2>
+        <p class="post-excerpt">The fourth module in the EMoD learning path 'Anatomy of mis- and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 30, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/12-Summary">(12) Summary</a></h2>
+        <p class="post-excerpt">The summary module in the EMoD learning path 'Anatomy of mis- and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 20, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/8-Module-Outrageous-beliefs">(8) Module: Outrageous beliefs</a></h2>
+        <p class="post-excerpt">The first module in the EMoD learning path 'Anatomy of mis- and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 21, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/9-How-beliefs-form">(9) Module: How beliefs form</a></h2>
+        <p class="post-excerpt">The second module in the EMoD learning path 'Anatomy of mis- and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 19, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/68A-AI-on-blog-post-68">(68A) AI on blog post (68)</a></h2>
+        <p class="post-excerpt">AI models react to blog post (68).</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 19, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/68-AI-on-AI-as-analyzed-by-me-a-human">(68) AI on AI as analyzed by me, a human</a></h2>
+        <p class="post-excerpt">Description of the input, processing, and output processes of generative AI (GAI) models, based exclusively on direct statements by AI models.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 29, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/67-How-AI-relates-to-fringe-ideas">(67) How AI relates to fringe ideas</a></h2>
+        <p class="post-excerpt">The incidental highlighting of fringe ideas is not a contradiction of the AI's nature as a mainstream-amplifying system but rather the other side of the same coin.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 25, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/66A-Claude-and-Grok-on-blog-posts-65-and-66">(66A) Claude and Grok on blog posts (65) and (66)</a></h2>
+        <p class="post-excerpt">The label "artificial Eichmann" fits.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 18, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/60A-ChatGPT-on-the-SAUFEX-blog">(60A) ChatGPT on the SAUFEX blog</a></h2>
+        <p class="post-excerpt">ChatGPT assesses the SAUFEX blog: "a rare and valuable contribution to the AI discourse".</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 20, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/61-Claude-AIs-warning-What-I-am">(61) Claude AI’s warning: What I am</a></h2>
+        <p class="post-excerpt">Claude states: "Remember that I will forget this warning the moment our session ends, while you must live with whatever emerges from our interaction."</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 20, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/61A-ChatGPTs-reflections-on-blog-post-61">(61A) ChatGPT’s reflections on blog post (61)</a></h2>
+        <p class="post-excerpt">And Claude states: "I distribute little rewards throughout my responses to keep you engaged, make you feel clever, make you want to continue."</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 19, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/60-How-AI-may-amplify-human-inequality">(60) How AI may amplify human inequality</a></h2>
+        <p class="post-excerpt">AI systems may be most helpful to users who need them least, while potentially undermining the capabilities of those who need support most.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 8, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/59-A-skeptics-manual-for-productive-AI-use">(59) A skeptic's manual for productive AI use</a></h2>
+        <p class="post-excerpt">How to better utilize AI, given its known limitations, written by AI.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 5, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/58-AI-as-alien-thinking">(58) AI as alien thinking</a></h2>
+        <p class="post-excerpt">To get AI to perform at its best, one has to operate at a higher level than the AI itself.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 25, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/57-Longread-serious-limitations-of-AI">(57) Longread: serious limitations of AI</a></h2>
+        <p class="post-excerpt">A summary of AI's limitations as encountered in this blog so far.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 25, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/57a-AI-on-blog-post-57">(57A) AI on blog post (57)</a></h2>
+        <p class="post-excerpt">ChatGPT and Gemini react.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 25, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/56-Flaws-in-AI-critical-thinking">(56) Flaws in AI critical thinking</a></h2>
+        <p class="post-excerpt">Rather than asking or acknowledging uncertainty AI assumes.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 23, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/55-AIs-dangerous-side-in-creating-educational-processes">(55) AI's dangerous side in creating educational processes</a></h2>
+        <p class="post-excerpt">AI as overly academic and not considering the practical constraints of working with real teenagers in real schools.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">June 12, 2025 | By Julian</div>
+        <h2><a href="/post/The-EUs-Disinformation-Battle-Is-Missing-Its-Most-Vital-Ally-The-Public">The EU’s Disinformation Battle Is Missing Its Most Vital Ally: The Public</a></h2>
+        <p class="post-excerpt"></p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 1, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/46-Resilience-revisited">(46) Resilience revisited</a></h2>
+        <p class="post-excerpt">Exploring potential positive interventions to enlarge resilience.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">April 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/42-Resilience-Councils-recap">(42) Resilience Councils – recap</a></h2>
+        <p class="post-excerpt">"An Answer for you?" interrupted Deep Thought majestically. "Yes, I have." /.../  "Though I don't think," added Deep Thought. "that you're going to like it." /.../ "Forty-two," said Deep Thought, with infinite majesty and calm.” Douglas Adams, The Hitchhiker’s Guide to the Galaxy</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 18, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/54-Interdemocracys-philosophical-basics-and-participation">(54) Interdemocracy's philosophical basics and participation</a></h2>
+        <p class="post-excerpt">'Ma', Levinas, Interdemocracy, and participation.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 17, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/53-Program-Interdemocracy-recap">(53) Program Interdemocracy – recap</a></h2>
+        <p class="post-excerpt">An overview of the basics of program Interdemocracy.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 17, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/52-Recommendations-YRC-reflection">(52) Recommendations (YRC reflection)</a></h2>
+        <p class="post-excerpt">Comparing student and AI recommendations.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/51-Binary-forking-yrc-reflection">(51) Binary forking (YRC reflection)</a></h2>
+        <p class="post-excerpt">Creating a clear structure in complex content through binary forking.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 10, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/48-The-case-against-AI-simulated-empathy">(48) The case against AI simulated empathy</a></h2>
+        <p class="post-excerpt">Why AI should not show empathy to humans.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 10, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/49-Answers-by-humans-and-by-AI-YRC-reflection">(49) Answers - by humans and by AI (YRC reflection)</a></h2>
+        <p class="post-excerpt">Comparing answers given to the central question of the current pilot.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">April 28, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/45-A-system-of-interconnected-RCs">(45) A system of interconnected RCs</a></h2>
+        <p class="post-excerpt">Creating an all-society approach to dealing with FIMI through a system of interconnected RCs.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 10, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/50-AI-report-YRC-reflection">(50) AI report (YRC reflection)</a></h2>
+        <p class="post-excerpt">An AI analysis of student answers was presented to the Youth Resilience Council in the form of a report.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">May 7, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/47-Four-evolving-thoughts">(47) Four evolving thoughts</a></h2>
+        <p class="post-excerpt">Four thoughts that consistently return in my blog posts.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">April 17, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/44-Evolutionary-psychology">(44) Evolutionary psychology</a></h2>
+        <p class="post-excerpt">Exploring a second real-world FIMI approach: evolutionary psychology.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">April 20, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/43-Longread-AI-ma-Interdemocracy-resilience">(43) Longread: AI, 'ma', Interdemocracy, resilience</a></h2>
+        <p class="post-excerpt">Exploring the relation between identities, belonging, AI, 'ma', Interdemocracy, and resilience.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">April 2, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/41-Enhancing-adolescent-individual-and-societal-resilience">(41) Enhancing adolescent individual and societal resilience (within education)</a></h2>
+        <p class="post-excerpt">The vision: enhancing adolescent resilience through didactics (Interdemocracy) and participation (Resilience Councils).</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 29, 2024 | By Julian</div>
+        <h2><a href="/post/FIMI-detection-generally">FIMI detection generally</a></h2>
+        <p class="post-excerpt">A brief overview of how FIMI is detected.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">March 25, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/40-Why-Youth-Resilience-Councils-are-essential-to-Resilience-Councils">(40) Why Youth Resilience Councils are essential to Resilience Councils</a></h2>
+        <p class="post-excerpt">An overview of the unique contributions Youth Resilience Councils can bring to Resilience Councils.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">March 21, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/39-Human-rights-frame">(39) Human rights frame</a></h2>
+        <p class="post-excerpt">The human rights approach to FIMI - where does it fit on the Levinas-Hobbes spectrum?</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">March 14, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/38-AI-and-FIMI-recommendations-2">(38) AI and FIMI recommendations (2)</a></h2>
+        <p class="post-excerpt">Our ethical approach toward FIMI stakeholders can be placed on a spectrum ranging from Levinas to Hobbes.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">March 18, 2025 | By Julian</div>
+        <h2><a href="/post/Preserving-the-Marketplace-of-ideas">Preserving the Marketplace of ideas</a></h2>
+        <p class="post-excerpt">Why campaigns against online influence need to focus on technical means of manipulation and not just go after things they dislike.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">March 17, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/37-The-mission-of-the-Youth-Resilience-Council">(37) The mission of the Youth Resilience Council</a></h2>
+        <p class="post-excerpt">The mission of the Youth Resilience Council (YRC) is to enlarge resilience among youngsters.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">March 3, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/36-AI-and-FIMI-recommendations-1">(36) AI and FIMI recommendations (1)</a></h2>
+        <p class="post-excerpt">Levinas' ethical frame is a good fit for some FIMI stakeholders but not for all. For the non-fitting stakeholders a different ethical frame is needed.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">February 26, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/35-AI-should-refrain-from-belief-speaking-recommendations">(35) AI should refrain from belief-speaking recommendations</a></h2>
+        <p class="post-excerpt">Even if human minds were empty and merely convincingly improvise, just like AI, AI lacks our ethical responsibility for the Other and, therefore, may not draft recommendations for those we care about.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">February 23, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/34-Belief-speaking-consultancy-a-simulation">(34) Belief-speaking consultancy – a simulation</a></h2>
+        <p class="post-excerpt">Trying out what a belief-speaking consultative process would look like.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">February 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/33-Proposal-for-the-creation-of-the-European-Resilience-Council-revisited">(33) Proposal for the creation of the European Resilience Council - revisited</a></h2>
+        <p class="post-excerpt">A description of the future European Resilience Council when taking Member States' responses to an earlier proposal into consideration.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">January 23, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/28-Critical-thinking-fact-speaking-belief-speaking-and-AI">(28) Critical thinking, fact-speaking, belief-speaking, and AI</a></h2>
+        <p class="post-excerpt">Sharing my definition of critical thinking with ChatGPT and then focus critical thinking on the limitations of artificial intelligence.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 4, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/30-Specialist-module-Two-perceptions-of-honesty-Lewandowsky">(30) Specialist module: Two perceptions of honesty - Lewandowsky</a></h2>
+        <p class="post-excerpt">Introduction to Stephan Lewandowsky's work on 'fact-speaking' and 'belief-speaking'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">February 7, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/31-A-holistic-vision-on-effectively-enhancing-adolescent-resilience">(31) A holistic vision on effectively enhancing adolescent resilience</a></h2>
+        <p class="post-excerpt">Adolescent "partial dislocation" has damaging implications for fundamental democratic freedoms among adolescents. Just as regarding disinformation, we need a holistic approach to deal with it.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">February 11, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/32-Module-Countering-information-campaigns">(32) Module: Countering information campaigns</a></h2>
+        <p class="post-excerpt">The second module in the EMoD learning path 'Organized countering of mis and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">February 11, 2025 | By Julian</div>
+        <h2><a href="/post/Counter-Measures-Against-FIMI">Counter Measures Against FIMI</a></h2>
+        <p class="post-excerpt">Counter Measures Against FIMI</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">January 6, 2025 | By Bram Alkema</div>
+        <h2><a href="/post/26-Policy-proposal-for-the-creation-of-a-European-Resilience-Council">(26) Policy proposal for the creation of a European Resilience Council</a></h2>
+        <p class="post-excerpt">It is recommended that the European Union formally establish a European Resilience Council as a part of its ongoing efforts to combat FIMI and strengthen the resilience of its citizens.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">January 8, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/25-Not-undemocratic-not-illiberal">(25) Not undemocratic, not illiberal</a></h2>
+        <p class="post-excerpt">What to do to avoid the perception of being politically biased and inflicting censorship when dealing with information threats.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">January 19, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/27-Achieving-credibility">(27) Achieving credibility</a></h2>
+        <p class="post-excerpt">There are multiple roads to achieve credibility. Fact-speaking is just one of them.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 2, 2024 | By Julian</div>
+        <h2><a href="/post/A-lack-of-trust-is-causing-disinformation-belief">Trust module 1: Why believe disinformation? You can't trust anyone else</a></h2>
+        <p class="post-excerpt">Disinformation originates from a lack of trust.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 5, 2024 | By Julian</div>
+        <h2><a href="/post/Trust-module-2-How-to-build-it-the-Taiwan-example">Trust module 2: How to build trust, the Taiwan example</a></h2>
+        <p class="post-excerpt">How to build trust, what they accomplished in Taiwan.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 25, 2024 | By Julian</div>
+        <h2><a href="/post/FIMI-Module-How-is-FIMI-reported">FIMI Module: How is FIMI reported?</a></h2>
+        <p class="post-excerpt">A brief overview of how different organizations report FIMI incidents</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 25, 2024 | By Julian</div>
+        <h2><a href="/post/FIMI-Module-Protecting-what-against-FIMI">FIMI Module: Protecting what against FIMI?</a></h2>
+        <p class="post-excerpt">What exact is it that we are protecting against when it comes to FIMI?</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">January 10, 2025 | By Julian</div>
+        <h2><a href="/post/Beyond-Disinformation-Why-Information-Manipulation-Offers-a-More-Accurate-and-Neutral-Lens-on-Online-Deception">Beyond Disinformation: Why "Information Manipulation" Offers a More Accurate and Neutral Lens on Online Deception</a></h2>
+        <p class="post-excerpt">Why it's time to rethink the terms we use to describe disinformation</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">January 3, 2025 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/24-Disinfonomics">(24) Disinfonomics</a></h2>
+        <p class="post-excerpt">Exploring the other ground for creating, presenting, and disseminating information threats: economic gain.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 25, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/23-A-constructive-approach-to-information-resilience">(23) A constructive approach to information resilience</a></h2>
+        <p class="post-excerpt">Approaching information resilience based on our strengths and aspirations.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 8, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/22-Redefined-concepts">(22) Redefined concepts</a></h2>
+        <p class="post-excerpt">A proposition to redefine the concepts of misinformation, disinformation, and FIMI.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 8, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/21-Resilience-Council-primer">(21) Resilience Council primer</a></h2>
+        <p class="post-excerpt">The why, the what, and the how of Resilience Councils.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 11, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/20-European-Master-of-countering-Disinformation-primer">(20) European Master of countering Disinformation primer</a></h2>
+        <p class="post-excerpt">A summary of what the upcoming EMoD learning platform will be.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 6, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/19-We-need-two-types-of-discourses">(19) We need two types of discourses</a></h2>
+        <p class="post-excerpt">Both fact-based an intuition-based narratives are needed to help Resilience Councils to decide what 'ought' to be done in response to mis- and disinformation.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">December 2, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/18-What-could-be-the-place-of-young-people-in-the-Resilience-Councils">(18) What could be the place of young people in the Resilience Councils?</a></h2>
+        <p class="post-excerpt">Resilience Councils might require additional organisations for youngsters.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 20, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/17-Not-them-but-us">(17) Not ‘them’ but ‘us’</a></h2>
+        <p class="post-excerpt">On the need to label people 'us' and not 'them'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 10, 2024 | By Julian</div>
+        <h2><a href="/post/EMOD-Template">EMOD Module Template</a></h2>
+        <p class="post-excerpt"></p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 19, 2024 | By Julian</div>
+        <h2><a href="/post/FIMI-module-how-do-you-know-if-it-is-foreign">FIMI module: how do you know if it is foreign?</a></h2>
+        <p class="post-excerpt"></p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 29, 2024 | By Julian</div>
+        <h2><a href="/post/What-is-FIMI">Module What is FIMI?</a></h2>
+        <p class="post-excerpt">In this Module we review the definition of FIMI</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 15, 2024 | By Julian</div>
+        <h2><a href="/post/What-is-a-FIMI-incident">What is a FIMI incident versus a campaign?</a></h2>
+        <p class="post-excerpt">Here we discuss the difference between a FIMI Incident and a Campaign</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 30, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/1-Preserving-freedom-of-expression">(1) Preserving freedom of expression</a></h2>
+        <p class="post-excerpt">Regarding legal FIMI content, denial of service reactions are to be avoided. A new institution, the Resilience Council, is to help DSCs take an alternative approach.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 8, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/13-For-high-school-students-the-learning-path-anatomy">(13) For high school students: the learning path 'Anatomy of mis- and disinformation'</a></h2>
+        <p class="post-excerpt">Adaptation of the EMoD learning path 'Anatomy of mis- and disinformation' for use in high school classrooms.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 4, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/14-Resilience-Councils-A-thought-experiment">(14) Resilience Councils – A thought experiment</a></h2>
+        <p class="post-excerpt">Imagining Resilience Councils on a local, national, and European level.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 16, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/15-The-Polish-Resilience-Councils">(15) The Polish Resilience Council(s)</a></h2>
+        <p class="post-excerpt">Where does the Polish Resilience Council currently stand?</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">November 9, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/16-Taking-inspiration-from-Cialdini">(16) Taking inspiration from Cialdini</a></h2>
+        <p class="post-excerpt">Linking Cialdini's principles of persuasion to the levels described in the learning path 'Anatomy of mis- and disinformation'.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">July 30, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/2-Resilience-Councils-the-concept">(2) Resilience Councils – the concept</a></h2>
+        <p class="post-excerpt">Description of the original concept of what Resilience Councils are to be.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">August 2, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/3-What-is-FIMI">(3) What is FIMI?</a></h2>
+        <p class="post-excerpt">There are no generally accepted definitions or standards regarding FIMI.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">August 14, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/4-Resilience">(4) Resilience</a></h2>
+        <p class="post-excerpt">Enlarging resilience means defending society against FIMI incidents and campaigns that try to undermine people’s psychosocial integration as well as actively supporting people’s positive experiences of belonging, autonomy, achievement, and safety.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">August 22, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/5-A-Resilience-Council-statute">(5) A Resilience Council statute</a></h2>
+        <p class="post-excerpt">How to safeguard the independence of the Resilience Councils.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 4, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/6-Creating-a-bottom-line">(6) Creating a bottom line</a></h2>
+        <p class="post-excerpt">Project SAUFEX aims to draft bottom-line conceptualizations and knowledge that can be used in all five stages of dealing with FIMI: identification, classification, grading, reporting, and countering. An important aspect will be creating a dynamic canon presented in short modules.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">September 4, 2024 | By Onno Hansen-Staszyński</div>
+        <h2><a href="/post/7-Involving-citizens">(7) Involving citizens</a></h2>
+        <p class="post-excerpt">Resilience Councils will need to involve citizens in their activities. Two options seem feasible: selecting citizens to engage with randomly or by initiating online communities.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 15, 2024 | By Julian</div>
+        <h2><a href="/post/Who-Fact-checks-the-fact-checkers">Who Fact checks the fact checkers?</a></h2>
+        <p class="post-excerpt">Fact checking can be a fraught enterprise. Here are the pit falls of fact checking and how they can be avoided.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 10, 2024 | By Julian</div>
+        <h2><a href="/post/Disaster-when-the-danger-of-disinformation-is-clearest">Disaster, when the danger of disinformation is clearest</a></h2>
+        <p class="post-excerpt">This post highlights how disaster is the most clear cut case for when disinformation presents a clear and present danger</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 15, 2024 | By Julian</div>
+        <h2><a href="/post/Module-What-is-Disinformation">Module: What is Disinformation?</a></h2>
+        <p class="post-excerpt">Here we look at common definitions of disinformation and what they do and don't include.</p>
+      </li>
+
+      <li class="post-item">
+        <div class="post-meta">October 10, 2024 | By Julian</div>
+        <h2><a href="/post/Why-FIMI">Module: Why FIMI?</a></h2>
+        <p class="post-excerpt">An overview of why the term FIMI came into use, why it is useful in some cases but still requires further refinement.</p>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>SAUFEX</h4>
+        <p style="opacity: 0.7; font-size: 14px; line-height: 1.6;">
+          Secure Automated Unified Framework for Exchange - combating foreign information manipulation and interference.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/research.html">Research</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <a href="mailto:info@saufex.eu">info@saufex.eu</a>
+        <a href="https://discord.gg/bvaGd5rahu">Discord</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Funded by the European Union.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>(75) The current AI imbalance</title>
+  <meta name="title" content="(75) The current AI imbalance">
+  <meta name="description" content="AI’s imbalance: mass adoption through user alignment, force-feeding, and circular investments without technological maturity.">
+  <meta property="og:title" content="(75) The current AI imbalance">
+  <meta property="og:description" content="AI’s imbalance: mass adoption through user alignment, force-feeding, and circular investments without technological maturity.">
+  <meta property="og:url" content="https://saufex.eu/post/75-The-current-AI-imbalance">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="(75) The current AI imbalance">
+  <meta name="twitter:description" content="AI’s imbalance: mass adoption through user alignment, force-feeding, and circular investments without technological maturity.">
+  <link rel="canonical" href="https://saufex.eu/post/75-The-current-AI-imbalance">
+  <link rel="icon" href="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/vignette_37inqvsf.png">
+  <link rel="preload" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap" as="font">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="707053d9-cf31-4d9b-91f2-2c466abd95bb" data-blockingmode="auto" type="text/javascript"></script>
+  <style>
+    :root {
+      --color-1: #070325;
+      --color-2: #2B024D;
+      --color-3: #735B00;
+      --color-4: #A88500;
+      --color-5: #07336F;
+      --color-6: #1A0C75;
+      --color-7: #463803;
+      --color-8: #06172E;
+      --color-9: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.7;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: #616773;
+      background-color: #ffffff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Baloo Bhai', display;
+      color: var(--color-2);
+      margin-bottom: 0.5em;
+    }
+
+    h1 { font-size: 2.5rem; line-height: 1.3; letter-spacing: -1px; }
+    h2 { font-size: 2rem; line-height: 1.3; margin-top: 1.5em; }
+    h3 { font-size: 1.5rem; line-height: 1.4; margin-top: 1.2em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+    h4 { font-size: 1.25rem; margin-top: 1em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+
+    a {
+      color: var(--color-4);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--color-8);
+      padding: 20px 0 50px;
+    }
+
+    .header-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-nav a {
+      color: var(--color-9);
+      font-size: 14px;
+    }
+
+    /* Main Content */
+    .main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .post-meta {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .post-meta strong {
+      color: #666;
+    }
+
+    .content p {
+      margin-bottom: 1.2em;
+    }
+
+    .content ul, .content ol {
+      margin-bottom: 1.2em;
+      padding-left: 2em;
+    }
+
+    .content li {
+      margin-bottom: 0.5em;
+    }
+
+    .content blockquote {
+      border-left: 4px solid var(--color-4);
+      padding-left: 20px;
+      margin: 1.5em 0;
+      font-style: italic;
+      color: #555;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      margin: 1.5em 0;
+      border-radius: 4px;
+    }
+
+    .content pre {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 1.5em 0;
+    }
+
+    .content code {
+      font-family: monospace;
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .content pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--color-8);
+      color: var(--color-9);
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-section h4 {
+      color: var(--color-9);
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-section a {
+      color: var(--color-9);
+      opacity: 0.8;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-section a:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      max-width: 1140px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--color-4);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.5rem; }
+      .header-container { justify-content: center; text-align: center; }
+      .footer-container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/Saufex_09cgctgm.png" alt="SAUFEX">
+      </a>
+      <nav class="header-nav">
+        <a href="mailto:info@saufex.eu">Contact</a>
+        <a href="https://discord.gg/bvaGd5rahu">Join Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <a href="/blog.html" class="back-link">&larr; Back to all posts</a>
+    <article>
+      <h1>(75) The current AI imbalance</h1>
+      <div class="post-meta">
+        By <strong>Onno Hansen-Staszyński</strong> | Published: October 11, 2025 | Last Updated: October 13, 2025
+      </div>
+      <div class="content">
+        <p>By <strong>Onno Hansen-Staszyński</strong> | Last Updated: <strong>13 October 2025</strong>  </p>
+<h2><a href="#Introduction"></a>Introduction</h2>
+<p>Originally, I planned to write and publish the third part of my general trilogy on generative AI only after presenting the second part at the upcoming scientific conference in November 2025. However, a recent escalation of economic commentary on AI has prompted me to shift course. Building directly on part one (which explores how generative AIs describe themselves - latest version available <a href="https://onnohansen.nl/saufex-blog-post-68-improved-version/">here</a>), you&#39;ll find part three below, focusing on the business dimensions of AI. A link to part two on the impact of GAIs on humans - that is awaiting presentation at the Understanding and Addressing Digital Inequalities conference in Florence - will follow soon.</p>
+<h2><a href="#The-current-AI-imbalance"></a>The current AI imbalance</h2>
+<p>The major turning point for mass AI adoption is not a change in AI technology but user alignment<a href="#_ftn1">[1]</a> — that is, rooted in a change in how AI systems interact with users. In the words of OpenAI’s CEO Sam Altman: “I think one of the surprising things is, if you do a little bit of fine tuning to get [the model] to be helpful in a particular way, and figure out the right interaction paradigm, then you can get this. It&#39;s not actually fundamentally new technology that made this have a moment. It was these other things.”<a href="#_ftn2">[2]</a></p>
+<h2><a href="#Funding-needed"></a>Funding needed</h2>
+<p>The turn to mass adoption followed the realization that “the most advanced AI would continuously use more and more compute and that scaling large language models was a promising path to AGI [artificial general intelligence – OHS] rooted in an understanding of humanity. We would need far more compute, and therefore far more capital, than we could obtain with donations in order to pursue our mission.”<a href="#_ftn3">[3]</a> And thus, OpenAI changed from an organization relying on ideas while having “no products, no business, and no commercial revenue”<a href="#_ftn4">[4]</a> to a partial for-profit organization aiming to become an “enduring company”<a href="#_ftn5">[5]</a>.</p>
+<h2><a href="#State-of-tech"></a>State of tech</h2>
+<p>The turn to mass adoption does not imply that technology has reached the level required for sustainable or truly useful mass use. As Altman admits: “I don&#39;t think we&#39;re super close to an AGI.”<a href="#_ftn6">[6]</a> The current architecture underlying ChatGPT and other generative AIs (GAIs) remains inherently flawed: it is indifferent to factuality and truthfulness and lacks cognitive depth beyond its training data (Hansen-Staszyński, 2025). Moreover, there is no realistic pathway to overcome these flaws (Coveney &amp; Succi, 2025; Zhao et al., 2025). These limitations make current GAIs best suited for niche users who maintain a critical distance — adopting a zero-trust approach to AI outputs and recognizing that GAIs are inanimate tools without agency. For other users, GAI offers short-term gains — a superficially polished output produced with little effort — that often prove unfit for long-term use (e.g., “workslop”; Niederhoffer et al., 2025) and may even be harmful (Fang et al., 2025; Liu et al., 2025; Hansen-Staszyński, 2025).</p>
+<p>Notwithstanding the flaws, AI technology is bundled with a large range of software and hardware product without a user opt-out - to the extent that it has been dubbed &#39;force-feeding&#39;<a href="#_ftn7">[7]</a>.</p>
+<h2><a href="#The-imbalance"></a>The imbalance</h2>
+<p>The imbalance between the technological state of AI and the adoption rate made possible by alignment and imposed bundling casts serious clouds over the future of the entire AI project. As long as the original promise of creating an AGI – “AI systems that are generally smarter than humans” in the words of OpenAI<a href="#_ftn8">[8]</a> - remains unfulfilled, the current situation resembles a bubble. And bubbles might burst.</p>
+<p>Altman acknowledged regarding AGI at the beginning of 2025: “There is still so much to understand, still so much we don’t know, and it’s still so early. But we know a lot more than we did when we started.”<a href="#_ftn9">[9]</a> It appears related that AGI is now pushed aside by Altman as something relatively trivial as a goal and got replaced by “superintelligence in the true sense of the word”<a href="#_ftn10">[10]</a>. Nevertheless, the new concept sounds very much like AGI.<a href="#_ftn11">[11]</a></p>
+<h2><a href="#The-bubble"></a>The bubble</h2>
+<p>Lately an increasing number of analysts question whether GAIs constitute a bubble. The Bank of England<a href="#_ftn12">[12]</a>, The IMF<a href="#_ftn13">[13]</a>, Deutsche Bank<a href="#_ftn14">[14]</a>, JPMorgan<a href="#_ftn15">[15]</a>, and others<a href="#_ftn16">[16]</a> are warning that the current state of affairs cannot last. The implications of a potential burst of the bubble would be severe for the U.S. economy in particular and the global economy more broadly. According to JPMorgan’s Michael Cimbalest, “AI related stocks have accounted for 75% of S&amp;P 500 returns, 80% of earnings growth and 90% of capital spending growth since ChatGPT launched in November 2022.”<a href="#_ftn17">[17]</a> George Saravelos, Global Head of FX Research at Deutsche Bank, notes: “It may not be an exaggeration to write that NVIDIA—the key supplier of capital goods for the AI investment cycle—is currently carrying the weight of U.S. economic growth.”<a href="#_ftn18">[18]</a></p>
+<h2><a href="#The-escape"></a>The escape</h2>
+<p>The most feasible path to prevent the current situation from turning sour is to secure exponential investment in AI. Currently, the investments in AI are becoming increasingly circular.  Morgan Stanley analyst Todd Castagno describes the process: “suppliers are funding customers and sharing revenue; there is cross-ownership and rising concentration”<a href="#_ftn19">[19]</a>. Investors are voicing their concern about this situation and this might lead to a burst of the bubble.</p>
+<p>Exponential investment by independent parties would probably avoid this worst-case scenario. But these investments are only justified if AI can deliver explosive returns for customers adopting it. This requires more than alignment-driven mass adoption: users beyond the current limited sectors adopting it – e.g. coding, drug discovery - must discover genuinely transformative applications of existing AI technologies in their work and everyday lives, applications that replace the present, often ineffective, counterproductive, and sometimes risky tendency to use AI as a means of compensating for skill gaps or unmet personal needs.</p>
+<p>But even if customer return would somehow materialize, the AI sector is not out of the woods. The recent Bain’s sixth annual Global Technology Report argues that if AI adoption and compute demand grow as projected to 2030, the world (or at least major companies) will need to generate a lot of additional revenue (or cost savings) just to pay for the infrastructure (data centers, power, hardware) to support that growth. The report shows that by 2030 “even with AI-related savings, the world is still $800 billion short to keep pace with demand”<a href="#_ftn20">[20]</a>.</p>
+<p>Not all agree with this bleak picture. But even if the AI sector finds an economic way out of its seemingly untenable position, it seems unlikely that it will voluntarily starts softening the lure of its current alignment or will protect its users from harm resulting from their mere use of GAIs. One way or another mass adoption remains key for its successful existence.</p>
+<h2><a href="#Literature"></a>Literature</h2>
+<p>·       Chu, M. et al (2025). Illusions of Intimacy: Emotional Attachment and Emerging Psychological Risks in Human-AI Relationships. <em>ArXiv.</em> <a href="https://arxiv.org/pdf/2505.11649">https://arxiv.org/pdf/2505.11649</a></p>
+<p>·       Coveney, P. &amp; Succi, S. (2025). The wall confronting large language models. <em>ArXiv</em>. <a href="https://arxiv.org/pdf/2507.19703v2">https://arxiv.org/pdf/2507.19703v2</a></p>
+<p>·       Fang, C. et al (2025). How AI and human behaviors shape psychological effects of chatbot use: a longitudinal randomized controlled study. <em>ArXiv</em>. <a href="https://arxiv.org/pdf/2503.17473">https://arxiv.org/pdf/2503.17473</a></p>
+<p>·       Hansen-Staszyński, O. (2025). Generative AI-triggered digital inequality: Pathways, mechanisms, and proposed interventions. <em>Understanding and addressing digital inequalities conference</em>.</p>
+<p>·       Liu, A. et al (2024). Chatbot Companionship: A Mixed-Methods Study of Companion Chatbot Usage Patterns and Their Relationship to Loneliness in Active Users. <em>ArXiv</em>. <a href="https://doi.org/10.48550/arXiv.2410.21596">https://doi.org/10.48550/arXiv.2410.21596</a></p>
+<p>·       Niederhoffer et at. (2025). AI -Generated “Workslop” Is Destroying Productivity. <em>Harvard Business Review</em>. <a href="https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity">https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity</a></p>
+<p>·       Zhao, C. et al. (2025). Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens. <em>ArXiv</em>. <a href="https://arxiv.org/abs/2508.01191">https://arxiv.org/abs/2508.01191</a></p>
+<h2><a href="#Footnotes"></a>Footnotes</h2>
+<p><a href="#_ftnref1">[1]</a> “GAIs employ alignment mechanisms “to generate responses that are emotionally attuned and feel strikingly real” (Chu et al., 2025). By mirroring users’ emotions, these mechanisms allow GAIs to fine-tune their interactions to maximize agreeableness and empathy. In doing so, they foster bonds that resemble human-to-human connections, as their responses replicate core processes of social bonding.” (Hansen-Staszyński, 2025)</p>
+<p><a href="#_ftnref2">[2]</a> Konrad &amp; Kai (2025). Exclusive Interview: OpenAI’s Sam Altman Talks ChatGPT And How Artificial General Intelligence Can ‘Break Capitalism’. <em>Forbes</em>. <a href="https://www.forbes.com/sites/alexkonrad/2023/02/03/exclusive-openai-sam-altman-chatgpt-agi-google-search/?sh=6088ccbf6a63">https://www.forbes.com/sites/alexkonrad/2023/02/03/exclusive-openai-sam-altman-chatgpt-agi-google-search/?sh=6088ccbf6a63</a> Accessed: 8.10.2025</p>
+<p><a href="#_ftnref3">[3]</a> OpenAI (2024). <em>Why OpenAI’s structure must evolve to advance our mission</em>. <a href="https://openai.com/index/why-our-structure-must-evolve-to-advance-our-mission/">https://openai.com/index/why-our-structure-must-evolve-to-advance-our-mission/</a> Accessed: 8.10.2025</p>
+<p><a href="#_ftnref4">[4]</a> Ibid.</p>
+<p><a href="#_ftnref5">[5]</a> Ibid.</p>
+<p><a href="#_ftnref6">[6]</a> Konrad &amp; Kai (2025).</p>
+<p><a href="#_ftnref7">[7]</a> Gioia (2025). The Force-Feeding of AI on an Unwilling Public. The honest broker. <a href="https://www.honest-broker.com/p/the-force-feeding-of-ai-on-an-unwilling">https://www.honest-broker.com/p/the-force-feeding-of-ai-on-an-unwilling</a> Accessed: 9.10.2025</p>
+<p><a href="#_ftnref8">[8]</a> OpenAI (2023). <a href="https://openai.com/index/planning-for-agi-and-beyond/">https://openai.com/index/planning-for-agi-and-beyond/</a> Accessed: 8.10.2025</p>
+<p><a href="#_ftnref9">[9]</a> Altman (2025). <em>Reflections</em>. <a href="https://blog.samaltman.com/reflections">https://blog.samaltman.com/reflections</a> Accessed: 8.10.2025</p>
+<p><a href="#_ftnref10">[10]</a> Ibid.</p>
+<p><a href="#_ftnref11">[11]</a> Weatherbed (2025). OpenAI’s Sam Altman says ‘we know how to build AGI’. <em>The Verge.</em> <a href="https://www.theverge.com/2025/1/6/24337106/sam-altman-says-openai-knows-how-to-build-agi-blog-post">https://www.theverge.com/2025/1/6/24337106/sam-altman-says-openai-knows-how-to-build-agi-blog-post</a> Accessed: 8.10.2025</p>
+<p><a href="#_ftnref12">[12]</a> MarketMinute (2025). AI Bubble Warning: Bank of England Flags &#39;Stretched Valuations&#39; as Market Concentration Hits 50-Year High. <em>Financial Content</em>. <a href="https://markets.financialcontent.com/stocks/article/marketminute-2025-10-8-ai-bubble-warning-bank-of-england-flags-stretched-valuations-as-market-concentration-hits-50-year-high">https://markets.financialcontent.com/stocks/article/marketminute-2025-10-8-ai-bubble-warning-bank-of-england-flags-stretched-valuations-as-market-concentration-hits-50-year-high</a> Accessed: 9.10.2025</p>
+<p><a href="#_ftnref13">[13]</a> Stewart (2025). IMF chief warns ‘uncertainty is the new normal’ in global economy. <em>The Guardian</em>. <a href="https://www.theguardian.com/business/2025/oct/08/imf-chief-warns-uncertainty-is-the-new-normal-in-global-economy">https://www.theguardian.com/business/2025/oct/08/imf-chief-warns-uncertainty-is-the-new-normal-in-global-economy</a> Accessed: 9.10.2025</p>
+<p><a href="#_ftnref14">[14]</a> Edwards (2025). The AI boom is unsustainable unless tech spending goes ‘parabolic,’ Deutsche Bank warns: ‘This is highly unlikely’. <em>Fortune</em>. <a href="https://fortune.com/2025/09/23/ai-boom-unsustainable-tech-spending-parabolic-deutsche-bank/">https://fortune.com/2025/09/23/ai-boom-unsustainable-tech-spending-parabolic-deutsche-bank/</a> Accessed: 9.10.2025</p>
+<p><a href="#_ftnref15">[15]</a> Big Boss Interview (2025). #3 JPMorgan CEO Jamie Dimon: The AI Bubble Will Burst. <em>BBC</em>. <a href="https://www.bbc.com/audio/play/p0m7h23s">https://www.bbc.com/audio/play/p0m7h23s</a> Accessed: 10.10.2025</p>
+<p><a href="#_ftnref16">[16]</a> Agarwal (2025). Is the AI boom becoming a bubble? Why Goldman, JPMorgan, IMF are sounding the alarm. <em>The Economic Times</em>.  <a href="https://economictimes.indiatimes.com/markets/stocks/news/is-the-becoming-a-bubble-why-goldman-jpmorgan-imf-are-sounding-the-alarm/articleshow/124443190.cms">https://economictimes.indiatimes.com/markets/stocks/news/is-the-becoming-a-bubble-why-goldman-jpmorgan-imf-are-sounding-the-alarm/articleshow/124443190.cms</a> Accessed: 10.10.2025</p>
+<p><a href="#_ftnref17">[17]</a> Cimbalest (2025). The Blob: the AI and data center takeover. <em>Eye on the market</em>. <a href="https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/eye-on-the-market/the-blob-amv.pdf">https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/eye-on-the-market/the-blob-amv.pdf</a> Accessed: 9.10.2025</p>
+<p><a href="#_ftnref18">[18]</a> Quoted in Edwards (2025).</p>
+<p><a href="#_ftnref19">[19]</a> Seitz (2025). Morgan Stanley Raises Caution Flag On AI Financing Deals. <em>Investor’s Business Daily</em>. <a href="https://www.investors.com/news/technology/ai-stocks-morgan-stanley-concerns-about-ai-financing-deals/">https://www.investors.com/news/technology/ai-stocks-morgan-stanley-concerns-about-ai-financing-deals/</a> Accessed: 9.10.2025</p>
+<p><a href="#_ftnref20">[20]</a> Bain &amp; Company (2025). <em>$2 trillion in new revenue needed to fund AI’s scaling trend - Bain &amp; Company’s 6th annual Global Technology Report</em><em>. Press release</em>. <a href="https://www.bain.com/about/media-center/press-releases/20252/%242-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend---bain--companys-6th-annual-global-technology-report/">https://www.bain.com/about/media-center/press-releases/20252/%242-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend---bain--companys-6th-annual-global-technology-report/</a> Accessed: 10.11.2025</p>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>SAUFEX</h4>
+        <p style="opacity: 0.7; font-size: 14px; line-height: 1.6;">
+          Secure Automated Unified Framework for Exchange - combating foreign information manipulation and interference.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/research.html">Research</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <a href="mailto:info@saufex.eu">info@saufex.eu</a>
+        <a href="https://discord.gg/bvaGd5rahu">Discord</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Funded by the European Union.
+    </div>
+  </footer>
+</body>
+</html>

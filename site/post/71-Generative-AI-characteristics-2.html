@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>(71) Generative AI characteristics (2)</title>
+  <meta name="title" content="(71) Generative AI characteristics (2)">
+  <meta name="description" content="GAIs are about pattern reproduction, not reasoning.">
+  <meta property="og:title" content="(71) Generative AI characteristics (2)">
+  <meta property="og:description" content="GAIs are about pattern reproduction, not reasoning.">
+  <meta property="og:url" content="https://saufex.eu/post/71-Generative-AI-characteristics-2">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="(71) Generative AI characteristics (2)">
+  <meta name="twitter:description" content="GAIs are about pattern reproduction, not reasoning.">
+  <link rel="canonical" href="https://saufex.eu/post/71-Generative-AI-characteristics-2">
+  <link rel="icon" href="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/vignette_37inqvsf.png">
+  <link rel="preload" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap" as="font">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Montserrat:400,200,300,400,600,800|Baloo+Bhai:400&display=swap">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="707053d9-cf31-4d9b-91f2-2c466abd95bb" data-blockingmode="auto" type="text/javascript"></script>
+  <style>
+    :root {
+      --color-1: #070325;
+      --color-2: #2B024D;
+      --color-3: #735B00;
+      --color-4: #A88500;
+      --color-5: #07336F;
+      --color-6: #1A0C75;
+      --color-7: #463803;
+      --color-8: #06172E;
+      --color-9: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.7;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: #616773;
+      background-color: #ffffff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Baloo Bhai', display;
+      color: var(--color-2);
+      margin-bottom: 0.5em;
+    }
+
+    h1 { font-size: 2.5rem; line-height: 1.3; letter-spacing: -1px; }
+    h2 { font-size: 2rem; line-height: 1.3; margin-top: 1.5em; }
+    h3 { font-size: 1.5rem; line-height: 1.4; margin-top: 1.2em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+    h4 { font-size: 1.25rem; margin-top: 1em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+
+    a {
+      color: var(--color-4);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--color-8);
+      padding: 20px 0 50px;
+    }
+
+    .header-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-nav a {
+      color: var(--color-9);
+      font-size: 14px;
+    }
+
+    /* Main Content */
+    .main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .post-meta {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .post-meta strong {
+      color: #666;
+    }
+
+    .content p {
+      margin-bottom: 1.2em;
+    }
+
+    .content ul, .content ol {
+      margin-bottom: 1.2em;
+      padding-left: 2em;
+    }
+
+    .content li {
+      margin-bottom: 0.5em;
+    }
+
+    .content blockquote {
+      border-left: 4px solid var(--color-4);
+      padding-left: 20px;
+      margin: 1.5em 0;
+      font-style: italic;
+      color: #555;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      margin: 1.5em 0;
+      border-radius: 4px;
+    }
+
+    .content pre {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 1.5em 0;
+    }
+
+    .content code {
+      font-family: monospace;
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .content pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--color-8);
+      color: var(--color-9);
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-section h4 {
+      color: var(--color-9);
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-section a {
+      color: var(--color-9);
+      opacity: 0.8;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-section a:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      max-width: 1140px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--color-4);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.5rem; }
+      .header-container { justify-content: center; text-align: center; }
+      .footer-container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/Saufex_09cgctgm.png" alt="SAUFEX">
+      </a>
+      <nav class="header-nav">
+        <a href="mailto:info@saufex.eu">Contact</a>
+        <a href="https://discord.gg/bvaGd5rahu">Join Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <a href="/blog.html" class="back-link">&larr; Back to all posts</a>
+    <article>
+      <h1>(71) Generative AI characteristics (2)</h1>
+      <div class="post-meta">
+        By <strong>Onno Hansen-Staszyński</strong> | Published: September 9, 2025 | Last Updated: October 11, 2025
+      </div>
+      <div class="content">
+        <p>By <strong>Onno Hansen-Staszyński</strong> | Last Updated: <strong>11 October 2025</strong>  </p>
+<p>The following is a second fragment from a draft version of an academic paper I&#39;m currently working on regarding text-based generative artificial intelligence (GAI)/ large language models (LLMs).</p>
+<h2><a href="#Characteristic-2-pattern-reproduction,-not-reasoning"></a>Characteristic 2: pattern reproduction, not reasoning</h2>
+<p>Wolfram (2023) found that ChatGPT is „just saying things that “sound right” based on what things “sounded like” in its training material”. GAIs have the capacity to build upon their training data, but only up to a certain extent. When confronted with high-complexity tasks, GAIs collapse<a href="#_ftn1">[1]</a>. (Shojaee, 2025) Even adding nonsense texts to prompts seriously undermines GAIs’ performance. (Rajeev et al., 2025)</p>
+<p>Zhao et al. (2025) investigated „if CoT reasoning reflects a structured inductive bias learned from in-distribution data, allowing the model to conditionally generate reasoning paths that approximate those seen during training.”<a href="#_ftn2">[2]</a> They conclude: “Empirical findings consistently demonstrate that CoT reasoning effectively reproduces reasoning patterns closely aligned with training distributions but suffers significant degradation when faced with distributional deviations. Such observations reveal the inherent brittleness and superficiality of current CoT reasoning capabilities.”</p>
+<p>This means that GAIs fail to develop generalizable reasoning capacities (Shojaee, 2025; Pearl, 2018), lack the robustness and generality of human analogy-making (Lewis &amp; Mitchell, 2024), and have limited (Wang et al., 2025) or no cognitive comprehension (Bishop, 2021). Schroeder et al. (2025) conclude that GAI models behave differently to humans and are conceptually distinct from human minds. They do not reach human-like and -level of cognition (Van Rooij et al., 2024).</p>
+<p>Just as the first characteristic necessitates a ‘zero-trust&#39; policy toward GAI outputs due to their indifference towards truth, the second characteristic demands a zero-trust stance toward their cognitive depth. Users must verify GAI outputs not only for factual accuracy but also for applicability, using human reasoning to evaluate whether the responses are suitable, relevant, and effective for the specific problem or context at hand.</p>
+<p><a href="/post/72-Generative-AI-characteristics-3">Part (3)</a></p>
+<h2><a href="#Literature"></a>Literature</h2>
+<p>·        Bishop, J. (2021). Artificial Intelligence Is Stupid and Causal Reasoning Will Not Fix It. <em>Front. Psychol.</em> <a href="https://doi.org/10.3389/fpsyg.2020.513474">https://doi.org/10.3389/fpsyg.2020.513474</a></p>
+<p>·        Lewis, M. &amp; Mitchell, M. (2024). Using Counterfactual Tasks to Evaluate the Generality of Analogical Reasoning in Large Language Models.  <em>ArXiv</em>. <a href="https://doi.org/10.48550/arXiv.2402.08955">https://doi.org/10.48550/arXiv.2402.08955</a></p>
+<p>·        Pearl. J. (2018). Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution. <em>ArXiv</em>. <a href="https://arxiv.org/abs/1801.04016">https://arxiv.org/abs/1801.04016</a></p>
+<p>·        Rajeev, M. et al. (2025) Cats Confuse Reasoning LLM: Query Agnostic Adversarial Triggers for Reasoning Models. <em>ArXiv</em>. <a href="https://arxiv.org/pdf/2503.01781v1">https://arxiv.org/pdf/2503.01781v1</a></p>
+<p>·        Schroeder, S. et al (2025) Large Language Models Do Not Simulate Human Psychology. <em>ArXiv</em>. <a href="https://doi.org/10.48550/arXiv.2508.06950">https://doi.org/10.48550/arXiv.2508.06950</a></p>
+<p>·        Shojaee, P. (2025). The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity. <em>ArXiv.</em> <a href="https://arxiv.org/abs/2506.06941">https://arxiv.org/abs/2506.06941</a></p>
+<p>·        Van Rooij, I. et al. (2024). Reclaiming AI as a Theoretical Tool for Cognitive Science_. Comput Brain Behav 7_, 616–636. <a href="https://doi.org/10.1007/s42113-024-00217-5">https://doi.org/10.1007/s42113-024-00217-5</a></p>
+<p>·        Wang, Y. et al. (2025). Drivel-ology: Challenging LLMs with Interpreting Nonsense with Depth. <em>ArXiv</em>. <a href="https://arxiv.org/abs/2509.03867">https://arxiv.org/abs/2509.03867</a></p>
+<p>·        Wolfram, S. (2023). What Is ChatGPT Doing … and Why Does It Work? stephenwolfram.com. <a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/</a></p>
+<p>·        Zhao, C. et al. (2025). Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens. <em>ArXiv</em>. <a href="https://arxiv.org/abs/2508.01191">https://arxiv.org/abs/2508.01191</a></p>
+<h2><a href="#Footnotes"></a>Footnotes</h2>
+<p><a href="#_ftnref1">[1]</a> As do more specialized Large Reasoning Models (LRMs).</p>
+<p><a href="#_ftnref2">[2]</a> Chain-of-Thought (CoT) entails complex reasoning through intermediate reasoning steps.</p>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>SAUFEX</h4>
+        <p style="opacity: 0.7; font-size: 14px; line-height: 1.6;">
+          Secure Automated Unified Framework for Exchange - combating foreign information manipulation and interference.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/research.html">Research</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <a href="mailto:info@saufex.eu">info@saufex.eu</a>
+        <a href="https://discord.gg/bvaGd5rahu">Discord</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Funded by the European Union.
+    </div>
+  </footer>
+</body>
+</html>
