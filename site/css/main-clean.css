@@ -50,7 +50,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Baloo Bhai', 'Georgia', serif;
+  font-family: 'Baloo Bhai', cursive;
   color: var(--color-purple);
   line-height: 1.2;
   margin-bottom: 0.5em;
@@ -68,20 +68,14 @@ h2 {
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 1.25rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
 }
 
 h5 {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-gold);
