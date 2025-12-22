@@ -181,17 +181,16 @@
     .footer {
       background-color: var(--color-8);
       color: var(--color-9);
-      padding: 40px 20px;
+      padding: 60px 20px 30px;
       margin-top: 60px;
     }
 
     .footer-container {
       max-width: 1140px;
       margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 30px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
     }
 
     .footer-section h4 {
@@ -216,8 +215,11 @@
       margin: 30px auto 0;
       padding-top: 20px;
       border-top: 1px solid rgba(255,255,255,0.1);
-      font-size: 12px;
-      opacity: 0.6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
     }
 
     .back-link {
@@ -226,11 +228,16 @@
       color: var(--color-4);
     }
 
+    @media (max-width: 992px) {
+      .footer-container { grid-template-columns: 1fr 1fr; }
+    }
+
     @media (max-width: 768px) {
       h1 { font-size: 1.8rem; }
       h2 { font-size: 1.5rem; }
       .header-container { justify-content: center; text-align: center; }
-      .footer-container { flex-direction: column; }
+      .footer-container { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
     }
   </style>
 </head>
@@ -388,10 +395,11 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">
-        <h4>SAUFEX</h4>
-        <p style="opacity: 0.7; font-size: 14px; line-height: 1.6;">
-          Secure Automated Unified Framework for Exchange - combating foreign information manipulation and interference.
+        <a href="../index.html"><img src="https://cdn.dorik.com/5ffdabc144afdb0011b83e1d/62474e909f34ad00115b4d4f/images/Saufex_09cgctgm.png" alt="SAUFEX" style="height: 50px; margin-bottom: 15px;"></a>
+        <p style="opacity: 0.8; font-size: 14px; line-height: 1.6;">
+          SAUFEX protects authentic expression from fabricated, disingenuous or coordinated interference.
         </p>
+        <img src="../images/google-drawing-3.svg" alt="Funded by the European Union" style="height: 50px; margin-top: 15px;">
       </div>
       <div class="footer-section">
         <h4>Quick Reference</h4>
@@ -400,16 +408,23 @@
         <a href="../research.html">Research & Resources</a>
         <a href="../impact.html">Impact & Outreach</a>
         <a href="../about.html">About & Contact</a>
-        <a href="../blog.html">Blog</a>
+        <a href="../research.html#apidocs">API Docs</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p style="opacity: 0.8; font-size: 14px;">Stablowicka 147 Street<br>54-066 Wroclaw, Poland</p>
+        <p style="opacity: 0.8; font-size: 14px; margin-top: 10px;">Alexanderveld 5<br>2516 BE The Hague, Netherlands</p>
       </div>
       <div class="footer-section">
         <h4>Connect</h4>
         <a href="mailto:info@saufex.eu">info@saufex.eu</a>
         <a href="https://discord.gg/bvaGd5rahu">Discord</a>
+        <img src="../images/by-nc-sa.png" alt="CC BY-NC-SA" style="height: 25px; margin-top: 15px; opacity: 0.8;">
       </div>
     </div>
     <div class="footer-bottom">
-      Funded by the European Union.
+      <span style="opacity: 0.6; font-size: 12px;">European Union does not accept liability for any damages resulting from visiting the website.</span>
+      <a href="../privacy.html" style="opacity: 0.8;">Privacy Policy</a>
     </div>
   </footer>
 
