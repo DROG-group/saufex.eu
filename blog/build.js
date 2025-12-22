@@ -92,8 +92,8 @@ function cleanContent(content) {
   cleaned = cleaned.replace(/\n{3,}/g, '\n\n').trim();
 
   // Convert absolute saufex.eu links to relative links
-  cleaned = cleaned.replace(/https:\/\/saufex\.eu\/post\//g, '/post/');
-  cleaned = cleaned.replace(/https:\/\/saufex\.eu\//g, '/');
+  cleaned = cleaned.replace(/https:\/\/saufex\.eu\/post\/([^)\s"]+)/g, '$1.html');
+  cleaned = cleaned.replace(/https:\/\/saufex\.eu\//g, '../');
 
   return cleaned;
 }
@@ -146,7 +146,7 @@ function buildBlogList(posts) {
     return `
       <li class="post-item">
         <div class="post-meta">${formatDate(post.date)} | By ${post.author}</div>
-        <h2><a href="/post/${post.slug}">${post.title}</a></h2>
+        <h2><a href="post/${post.slug}.html">${post.title}</a></h2>
         <p class="post-excerpt">${excerpt}</p>
       </li>`;
   }).join('\n');
