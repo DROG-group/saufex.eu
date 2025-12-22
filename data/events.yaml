@@ -1,0 +1,42 @@
+# SAUFEX Events
+# Format:
+#   - what: Event title
+#     where: Location
+#     date: YYYY-MM-DD
+#     desc: Short description
+#     links:
+#       - text: Link text
+#         url: URL
+
+events:
+  - what: "SAUFEX Final Conference"
+    where: "Brussels, Belgium"
+    date: 2025-06-15
+    desc: "Presenting final project results and recommendations to EU stakeholders."
+    links:
+      - text: "Register"
+        url: "https://saufex.eu/events/final-conference"
+
+  - what: "Webinar: AI and Disinformation Detection"
+    where: "Online"
+    date: 2025-03-20
+    desc: "Expert panel discussing the role of AI in detecting foreign information manipulation."
+    links:
+      - text: "Watch on YouTube"
+        url: "https://www.youtube.com/channel/UCJpiyIP4lWTgpqgJE830Kqw"
+
+  - what: "EMOD Training Workshop"
+    where: "Warsaw, Poland"
+    date: 2025-02-10
+    desc: "Hands-on training session for the European Master of Disinformation modules."
+    links:
+      - text: "Access EMOD"
+        url: "https://substance-frontend.vercel.app/"
+
+  - what: "Podcast Recording Session"
+    where: "The Hague, Netherlands"
+    date: 2025-01-25
+    desc: "Recording session for upcoming SAUFEX podcast episodes on resilience councils."
+    links:
+      - text: "Listen on Soundcloud"
+        url: "https://soundcloud.com/saufex"

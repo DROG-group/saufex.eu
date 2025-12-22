@@ -27,12 +27,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install dependencies
+      - name: Install blog dependencies
         run: npm ci
         working-directory: blog
       - name: Build blog
         run: npm run build
         working-directory: blog
+      - name: Install scripts dependencies
+        run: npm ci
+        working-directory: scripts
+      - name: Build events
+        run: node build-events.js
+        working-directory: scripts
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
