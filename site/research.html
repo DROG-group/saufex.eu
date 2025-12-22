@@ -18,12 +18,18 @@
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="707053d9-cf31-4d9b-91f2-2c466abd95bb" data-blockingmode="auto" type="text/javascript"></script>
   <link rel="stylesheet" href="css/main-clean.css">
   <style>
-    .resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
+    .resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-top: 30px; }
     .resource-card { background: var(--color-white); border-radius: var(--radius-md); padding: 40px; box-shadow: var(--shadow-sm); border: 1px solid var(--color-gray-200); transition: var(--transition); }
     .resource-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--color-gold); }
     .resource-card i { font-size: 48px; color: var(--color-gold); margin-bottom: 24px; }
     .resource-card h3 { margin-bottom: 16px; }
     .resource-card p { color: var(--color-text-light); margin-bottom: 24px; }
+    .resource-list { list-style: none; max-width: 800px; margin: 0 auto; }
+    .resource-list li { padding: 16px 0; border-bottom: 1px solid var(--color-gray-200); }
+    .resource-list li:last-child { border-bottom: none; }
+    .resource-list a { color: var(--color-purple); font-size: 16px; display: flex; align-items: center; gap: 12px; }
+    .resource-list a:hover { color: var(--color-gold); }
+    .resource-list i { color: var(--color-gold); font-size: 18px; }
   </style>
 </head>
 <body>
@@ -57,8 +63,33 @@
   <section class="section" id="resources">
     <div class="container">
       <div class="section-header">
-        <h2>Resources</h2>
-        <p>Tools, publications, and educational materials to support your work</p>
+        <h2>Research & Publications</h2>
+      </div>
+      <ul class="resource-list">
+        <li><a href="https://docs.saufex.eu/Lessons_for_Poland-Saufex_Research_Paper-Pawe%C5%82_Kasprzyk.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Lessons for Poland - Saufex Research Paper - Paweł Kasprzyk</a></li>
+        <li><a href="https://docs.saufex.eu/Towards_FIMI_Resilience_Council_in_Poland.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Towards FIMI Resilience Council in Poland - A Research and Progress Report</a></li>
+        <li><a href="https://brill.com/display/title/71367" target="_blank"><i class="fas fa-book"></i> International Disinformation: A Handbook for Analysis and Response</a></li>
+        <li><a href="https://github.com/BramDrog/docs.saufex.eu/blob/main/booklet%20(1).pdf" target="_blank"><i class="fas fa-file-pdf"></i> Project SAUFEX on "societal resilience" and "whole-of-society approach"</a></li>
+      </ul>
+
+      <div class="section-header" style="margin-top: 60px;">
+        <h2>Reports & White Papers</h2>
+      </div>
+      <ul class="resource-list">
+        <li><a href="https://docs.saufex.eu/EMOD_Societal_Resilience_Modular_Action_Plan.pdf" target="_blank"><i class="fas fa-file-pdf"></i> EMOD: Societal Resilience through a Modular Action Plan</a></li>
+        <li><a href="https://docs.saufex.eu/D1.2%20-%20Current%20state%20of%20detection%20and%20response%20to%20FIMI.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Current state of detection and response to FIMI</a></li>
+        <li><a href="https://docs.saufex.eu/D3.1.%20FIMI%20narrative_FINAL.pdf" target="_blank"><i class="fas fa-file-pdf"></i> FIMI Narrative Report: An Analysis of Current State and Evolution of Russian Disinformation Narratives Targeting EU</a></li>
+      </ul>
+
+      <div class="section-header" style="margin-top: 60px;">
+        <h2>Ongoing Research</h2>
+      </div>
+      <ul class="resource-list">
+        <li><a href="https://docs.saufex.eu/STATE-OF-FIMI-draft.pdf" target="_blank"><i class="fas fa-file-pdf"></i> State of FIMI (Draft)</a></li>
+      </ul>
+
+      <div class="section-header" style="margin-top: 60px;">
+        <h2>Educational Resources</h2>
       </div>
       <div class="resource-grid">
         <div class="resource-card">
@@ -66,12 +97,6 @@
           <h3>EMOD Modules</h3>
           <p>European Master of Disinformation educational modules for training professionals and officials.</p>
           <a href="https://substance-frontend.vercel.app/" target="_blank" class="btn btn-outline">Access EMOD</a>
-        </div>
-        <div class="resource-card">
-          <i class="fas fa-book"></i>
-          <h3>Research Publications</h3>
-          <p>Academic papers and reports on foreign information manipulation and democratic resilience.</p>
-          <a href="blog.html" class="btn btn-outline">View Publications</a>
         </div>
         <div class="resource-card">
           <i class="fas fa-microphone"></i>
@@ -84,18 +109,6 @@
           <h3>Webinars</h3>
           <p>Recorded sessions and live events featuring experts in information security and democracy.</p>
           <a href="https://www.youtube.com/channel/UCJpiyIP4lWTgpqgJE830Kqw" target="_blank" class="btn btn-outline">Watch Videos</a>
-        </div>
-        <div class="resource-card">
-          <i class="fas fa-shield-alt"></i>
-          <h3>DISARM Framework</h3>
-          <p>Standardized framework for describing and analyzing disinformation incidents and tactics.</p>
-          <a href="post/What-are-the-DISARM-Frameworks.html" class="btn btn-outline">Learn More</a>
-        </div>
-        <div class="resource-card">
-          <i class="fas fa-chart-network"></i>
-          <h3>ABCDE Framework</h3>
-          <p>Analytical framework for understanding information manipulation campaigns.</p>
-          <a href="post/What-is-the-ABCDE-Framework.html" class="btn btn-outline">Learn More</a>
         </div>
       </div>
     </div>
